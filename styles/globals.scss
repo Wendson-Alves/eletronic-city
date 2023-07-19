@@ -3,3 +3,11 @@
 .borda{
   border: 1px solid red;
 }
+
+em{
+  font-style: normal;
+}
+
+.ant-rate .ant-rate-star:not(:last-child) {
+  margin-inline-end: 2px;
+}
