@@ -1,7 +1,9 @@
+import CardProductType1 from "@/components/Cards/CardProductType1/CardProductType1";
+
 const home = () => {
   return (
     <section>
-      <h1>Home</h1>
+      <CardProductType1/>
     </section>
   );
 }
