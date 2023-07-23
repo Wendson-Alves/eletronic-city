@@ -11,3 +11,13 @@ em{
 .ant-rate .ant-rate-star:not(:last-child) {
   margin-inline-end: 2px;
 }
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input:focus{
+  outline: none;
+}
