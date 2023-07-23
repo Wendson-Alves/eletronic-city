@@ -36,7 +36,6 @@
             position: relative;
             display: flex;
             justify-content: center;
-            height: 0;
 
             &::after {
               content: '';
@@ -58,14 +57,16 @@
         }
       }
 
-      button,
-      img {
+      button {
         display: none;
-        width: 25px;
-        height: 25px;
-  
+        
         @media screen and (max-width: 995px) {
-          display: unset !important;
+          display: block !important;
+        }
+
+        img {
+          width: 25px;
+          height: 25px;
         }
       }
   
