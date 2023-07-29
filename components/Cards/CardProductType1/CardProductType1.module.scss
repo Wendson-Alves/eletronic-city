@@ -10,14 +10,17 @@
 
   // > antes do seletor, para pegar apenas seus filhos primarios (nao os netos)
   >span{
+    position: absolute;
+    left: 20px;
     color: #22f022;
+    margin-bottom: 15px;
     font-size: 12px;
     width: 100%;
     //align-self: flex-start;
   }
 
   img{
-    margin: 15px;
+    margin: 25px 15px 15px;
     width: 200px;
     height: 200px;
     object-fit: contain;
@@ -36,12 +39,18 @@
 
   em.product_code{
     width: 100%;
+    margin-top: auto;
     font-size: 10px;
     color: #f26522;
     margin-bottom: 3px;
   }
 
   h3{
+    overflow: hidden; // Removendo barra de rolagem
+    text-overflow: ellipsis; // Adicionando "..." ao final
+    display: -webkit-box;
+    -webkit-line-clamp: 2; // Quantidade de linhas
+    -webkit-box-orient: vertical; 
     width: 100%;
     font-size: 17px;
     font-weight: 700;

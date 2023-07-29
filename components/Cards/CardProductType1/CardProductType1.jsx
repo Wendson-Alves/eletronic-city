@@ -3,10 +3,10 @@ import styles from './CardProductType1.module.scss'
 import { useState } from 'react';
 import { Rate } from 'antd';
 
-const CardProductType1 = ({title, stock, promotion, code, image, discount, price, rate}) => {
+const CardProductType1 = ({title, stock, promotion, code, image, discount, price, rate, className}) => {
 
   return (
-    <div className={styles.card_product_type_1}>
+    <div className={`${styles.card_product_type_1} ${className}`}>
       {stock > 0 && (
         <span>In stock</span>
       )}

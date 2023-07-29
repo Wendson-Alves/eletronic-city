@@ -29,12 +29,22 @@ const ProductPage = () => {
           data={products}
           title={'Smartphone'}
           filterPerCategory={'smartphones'}
+          style={{marginTop: 20}}
         />
         <ListProductsType1
           data={products}
           title={'Notebooks'}
           filterPerCategory={'notebooks'}
+          style={{marginTop: 20}}
         />
+        <ListProductsType1
+          data={products}
+          title={'Hits'}
+          filterPerCategory={'hits'}
+          style={{marginTop: 20}}
+          showPopulars
+        />
+
       </section>
     </LayoutType1>
   );

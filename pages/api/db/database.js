@@ -130,6 +130,71 @@ const dataBase = [
         image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
       },
     ]
+  },
+  {
+    category: 'hits',
+    products: [
+      {
+        id: 13,
+        title: 'Título do hit 7',
+        slug: formattedURL('Título do hit 7'),
+        rating: 3.4,
+        price: 1000,
+        discount: 1300,
+        stock: 10,
+        image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
+      },
+      {
+        id: 14,
+        title: 'Título do hit 8',
+        slug: formattedURL('Título do hit 8'),
+        rating: 4.0,
+        price: 1000,
+        discount: 1300,
+        stock: 10,
+        image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
+      },
+      {
+        id: 15,
+        title: 'Título do hit 9',
+        slug: formattedURL('Título do hit 9'),
+        rating: 4.8,
+        price: 1000,
+        discount: 1300,
+        stock: 10,
+        image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
+      },
+      {
+        id: 16,
+        title: 'Título do hit 10',
+        slug: formattedURL('Título do hit 10'),
+        rating: 4.8,
+        price: 1000,
+        discount: 1300,
+        stock: 10,
+        image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
+      },
+      {
+        id: 17,
+        title: 'Título do hit 11',
+        slug: formattedURL('Título do hit 11'),
+        rating: 4.8,
+        price: 1000,
+        discount: 1300,
+        stock: 10,
+        image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
+      },
+      {
+        id: 18,
+        title: 'Título do hit 12',
+        slug: formattedURL('Título do hit 12'),
+        rating: 4.8,
+        price: 1000,
+        discount: 1300,
+        stock: 10,
+        image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
+      },
+    ]
   }
 ]
 

@@ -1,0 +1,29 @@
+.group_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+ 
+  h2{
+    margin: 0;
+  }
+
+  .buttons{
+
+    button{
+      padding: 5px;
+      border: 1px solid red;
+    }
+  }
+}
+
+.swiper {
+
+  .swiper_slide {
+    height: auto;
+
+    .card_product{
+      height: 100%;
+    }
+  }
+}
