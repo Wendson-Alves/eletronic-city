@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './home.module.scss'
 
-const Home = () => {s
+const Home = () => {
 	const [sizeLg, setSizeLg] = useState(20)
 	const [count, setCount] = useState(0)
 	const [showDiv, setShowDiv] = useState(false)
