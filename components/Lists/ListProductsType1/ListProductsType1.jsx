@@ -5,41 +5,43 @@ import calcPercent from '@/helpers/calcPercent';
 import { formatCurrencyNumber } from '@/helpers/formatNumber';
 import { Navigation } from 'swiper/modules';
 
-
-
-const ListProductsType1 = ({ title, data, filterPerCategory, style, showPopulars=false}) => {
+const ListProductsType1 = ({ title, data, filterPerCategory, style, showPopulars = false }) => {
   return (
     <section style={style}>
       <div className={styles.group_header}>
         <h2>{title}</h2> {/* Criar os botoes de navegacao do swiper, com ''navegation'' */}
         <div className={styles.buttons}>
-          <button id={`prev-${title}`}>Prev</button>
-          <button id={`next-${title}`}>Next</button>
+          <button id={`prev-${title}`}><img src="./imagens/arrow-left.svg" alt="" /></button>
+          <button id={`next-${title}`}><img src="./imagens/arrow-right.svg" alt="" /></button>
         </div>
       </div>
       <Swiper
         navigation={{
-          prevEl: `#prev-${title}`, 
+          prevEl: `#prev-${title}`,
           nextEl: `#next-${title}`
         }}
         modules={[Navigation]}
         className={styles.swiper}
         breakpoints={{
+          540: {
+            slidesPerView: 2,
+          },
+
           768: {
-            slidesPerView: 3
+            slidesPerView: 3,
           },
 
           992: {
-            slidesPerView: 4
-          }
+            slidesPerView: 4,
+          },
         }}
         grabCursor
       >
         {data.filter((item) => {
           return (
             item.category === filterPerCategory
-              && (showPopulars && item.rating >= 4 || !showPopulars && item)
-                && item
+            && (showPopulars && item.rating >= 4 || !showPopulars && item)
+            && item
           )
         }).map((product, index) => {
           return (

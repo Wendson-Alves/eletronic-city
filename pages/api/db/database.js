@@ -12,7 +12,7 @@ const dataBase = [
         price: 1000,
         discount: 1300,
         stock: 0,
-        image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
+        image: './imagens/smartphone.png'
       },
       {
         id: 2,
@@ -22,7 +22,7 @@ const dataBase = [
         price: 1000,
         discount: 1300,
         stock: 10,
-        image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
+        image: './imagens/smartphone.png'
       },
       {
         id: 3,
@@ -32,17 +32,17 @@ const dataBase = [
         price: 1000,
         discount: 1300,
         stock: 10,
-        image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
+        image: './imagens/smartphone.png'
       },
       {
         id: 4,
         title: 'Título do smartphone 4',
         slug: formattedURL('Título do smartphone 4'),
         rating: 4.8,
-        price: 1000,
-        discount: 1300,
+        price: 2500,
+        discount: 4000,
         stock: 10,
-        image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
+        image: './imagens/smartphone.png'
       },
       {
         id: 5,
@@ -52,7 +52,7 @@ const dataBase = [
         price: 1000,
         discount: 1300,
         stock: 10,
-        image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
+        image: './imagens/smartphone.png'
       },
       {
         id: 6,
@@ -62,7 +62,7 @@ const dataBase = [
         price: 1000,
         discount: 1300,
         stock: 10,
-        image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
+        image: './imagens/smartphone.png'
       },
     ]
   },
@@ -77,7 +77,7 @@ const dataBase = [
         price: 1000,
         discount: 1300,
         stock: 10,
-        image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
+        image: './imagens/notebook.png'
       },
       {
         id: 8,
@@ -87,7 +87,7 @@ const dataBase = [
         price: 1000,
         discount: 1300,
         stock: 10,
-        image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
+        image: './imagens/notebook.png'
       },
       {
         id: 9,
@@ -97,7 +97,7 @@ const dataBase = [
         price: 1000,
         discount: 1300,
         stock: 10,
-        image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
+        image: './imagens/notebook.png'
       },
       {
         id: 10,
@@ -107,7 +107,7 @@ const dataBase = [
         price: 1000,
         discount: 1300,
         stock: 10,
-        image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
+        image: './imagens/notebook.png'
       },
       {
         id: 11,
@@ -117,7 +117,7 @@ const dataBase = [
         price: 1000,
         discount: 1300,
         stock: 10,
-        image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
+        image: './imagens/notebook.png'
       },
       {
         id: 12,
@@ -127,7 +127,7 @@ const dataBase = [
         price: 1000,
         discount: 1300,
         stock: 10,
-        image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
+        image: './imagens/notebook.png'
       },
     ]
   },

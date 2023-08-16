@@ -21,9 +21,10 @@ const Header = () => {
             <li><button onClick={() => { setShowSales(true) }}>Sales</button></li>
           </ul>
           <ul>
-            <li><a href="">aaaa</a></li>
-            <li><a href="">aaaa</a></li>
-            <li><a href="">aaaa</a></li>
+            <li><a href=""><img src="./imagens/face.svg" alt="" /></a></li>
+            <li><a href=""><img src="./imagens/instagram.svg" alt="" /></a></li>
+            <li><a href=""><img src="./imagens/twitter.svg" alt="" /></a></li>
+           
           </ul>
           <button onClick={() => { setShowMenu(true) }}><img src="imagens/line-icon.svg" alt="" /></button>
           {showMenu && (
@@ -57,9 +58,9 @@ const Header = () => {
       <section>
         <div className={`${styles.search_bar} container`}>
           <div className={styles.catalog}>
-            <img src="imagens/grid-icon.svg" alt="" /><em>Product catalog</em>
+            <img src="imagens/grid-icon.svg" alt="" /><em>Products</em>
           </div>
-          <input type="text" />
+          <input type="text"/>
           <button>Search</button>
         </div>
       </section>
@@ -68,3 +69,12 @@ const Header = () => {
 }
 
 export default Header;
+
+{/**criar evento a um elemento: 
+1° crio a const e passo os nomes (ex: const [showMenu, setShowMenu] = useState(false)).
+2° no elemento que eu quero criar o evendo, eu especifico 
+qual evento quero criar (ex: onClick).
+3° faço a verificação da propriedade (ex: showElemento && ( aqui coloco todo o codigo
+  que sera verificado se é verdadeiro ou falso))
+
+*/}
