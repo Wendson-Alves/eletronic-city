@@ -2,12 +2,14 @@ import CardProductType1 from "@/components/Cards/CardProductType1/CardProductTyp
 import { formatCurrencyNumber } from "@/helpers/formatNumber";
 import LayoutType1 from "@/layouts/LayoutType1";
 import Link from "next/link";
-
+import Slide from "@/slides/Slides/SlidesHome";
+import SlideHome from "@/slides/Slides/SlidesHome";
 
 const home = () => {
   return (
     <LayoutType1 title={"Home"}>
       <section className="container">
+      <SlideHome/>
         {/* <Link href={'/about'}>
          About
         </Link> */}
