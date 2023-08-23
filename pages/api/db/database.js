@@ -9,7 +9,7 @@ const dataBase = [
         title: 'Título do smartphone 1',
         slug: formattedURL('Título do smartphone 1'),
         rating: 3.4,
-        price: 1000,
+        price: 800,
         discount: 1300,
         stock: 0,
         image: './imagens/smartphone.png'
@@ -19,7 +19,7 @@ const dataBase = [
         title: 'Título do smartphone 2',
         slug: formattedURL('Título do smartphone 2'),
         rating: 4.0,
-        price: 1000,
+        price: 100,
         discount: 1300,
         stock: 10,
         image: './imagens/smartphone.png'
@@ -49,7 +49,7 @@ const dataBase = [
         title: 'Título do smartphone 5',
         slug: formattedURL('Título do smartphone 5'),
         rating: 4.8,
-        price: 1000,
+        price: 1050,
         discount: 1300,
         stock: 10,
         image: './imagens/smartphone.png'
@@ -59,7 +59,7 @@ const dataBase = [
         title: 'Título do smartphone 6',
         slug: formattedURL('Título do smartphone 6'),
         rating: 4.8,
-        price: 1000,
+        price: 1080,
         discount: 1300,
         stock: 10,
         image: './imagens/smartphone.png'
@@ -74,7 +74,7 @@ const dataBase = [
         title: 'Título do notebook 7',
         slug: formattedURL('Título do notebook 7'),
         rating: 3.4,
-        price: 1000,
+        price: 2000,
         discount: 1300,
         stock: 10,
         image: './imagens/notebook.png'
@@ -84,7 +84,7 @@ const dataBase = [
         title: 'Título do notebook 8',
         slug: formattedURL('Título do notebook 8'),
         rating: 4.0,
-        price: 1000,
+        price: 2000,
         discount: 1300,
         stock: 10,
         image: './imagens/notebook.png'
@@ -114,7 +114,7 @@ const dataBase = [
         title: 'Título do notebook 11',
         slug: formattedURL('Título do notebook 11'),
         rating: 4.8,
-        price: 1000,
+        price: 1700,
         discount: 1300,
         stock: 10,
         image: './imagens/notebook.png'
@@ -124,7 +124,7 @@ const dataBase = [
         title: 'Título do notebook 12',
         slug: formattedURL('Título do notebook 12'),
         rating: 4.8,
-        price: 1000,
+        price: 1500,
         discount: 1300,
         stock: 10,
         image: './imagens/notebook.png'
@@ -139,7 +139,7 @@ const dataBase = [
         title: 'Título do hit 7',
         slug: formattedURL('Título do hit 7'),
         rating: 3.4,
-        price: 1000,
+        price: 1400,
         discount: 1300,
         stock: 10,
         image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
@@ -149,7 +149,7 @@ const dataBase = [
         title: 'Título do hit 8',
         slug: formattedURL('Título do hit 8'),
         rating: 4.0,
-        price: 1000,
+        price: 1100,
         discount: 1300,
         stock: 10,
         image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
@@ -159,7 +159,7 @@ const dataBase = [
         title: 'Título do hit 9',
         slug: formattedURL('Título do hit 9'),
         rating: 4.8,
-        price: 1000,
+        price: 1100,
         discount: 1300,
         stock: 10,
         image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
@@ -169,8 +169,8 @@ const dataBase = [
         title: 'Título do hit 10',
         slug: formattedURL('Título do hit 10'),
         rating: 4.8,
-        price: 1000,
-        discount: 1300,
+        price: 1900,
+        discount: 900,
         stock: 10,
         image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
       },
@@ -178,7 +178,7 @@ const dataBase = [
         id: 17,
         title: 'Título do hit 11',
         slug: formattedURL('Título do hit 11'),
-        rating: 4.8,
+        rating: 3.8,
         price: 1000,
         discount: 1300,
         stock: 10,
@@ -188,8 +188,8 @@ const dataBase = [
         id: 18,
         title: 'Título do hit 12',
         slug: formattedURL('Título do hit 12'),
-        rating: 4.8,
-        price: 1000,
+        rating: 3.8,
+        price: 1200,
         discount: 1300,
         stock: 10,
         image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'

@@ -44,7 +44,6 @@ const ProductPage = () => {
           style={{marginTop: 20}}
           showPopulars
         />
-
       </section>
     </LayoutType1>
   );

@@ -2,14 +2,15 @@ import CardProductType1 from "@/components/Cards/CardProductType1/CardProductTyp
 import { formatCurrencyNumber } from "@/helpers/formatNumber";
 import LayoutType1 from "@/layouts/LayoutType1";
 import Link from "next/link";
-import Slide from "@/slides/Slides/SlidesHome";
 import SlideHome from "@/slides/Slides/SlidesHome";
 
 const home = () => {
   return (
     <LayoutType1 title={"Home"}>
       <section className="container">
-      <SlideHome/>
+      <SlideHome
+     
+      />
         {/* <Link href={'/about'}>
          About
         </Link> */}
@@ -23,6 +24,7 @@ const home = () => {
           discount={formatCurrencyNumber(39700, 'compact')}
           price={formatCurrencyNumber(35900)}
         />
+        
       </section>
     </LayoutType1>
   );

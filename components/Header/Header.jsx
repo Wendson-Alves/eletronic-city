@@ -12,19 +12,19 @@ const Header = () => {
       <nav>
         <div className={`${styles.container} container`}>
           <ul>
-            <li><Link href="">Abount company</Link></li>
-            <li><Link href="">News</Link></li>
-            <li><Link href="">Shops</Link></li>
+          <li><Link href="http://localhost:3000">Home</Link></li>
+            <li><Link href="http://localhost:3000/products">Products</Link></li>
             <li><Link href="">Stock</Link></li>
             <li><Link href="">Services</Link></li>
             <li><Link href="">Delivery and payment</Link></li>
             <li><button onClick={() => { setShowSales(true) }}>Sales</button></li>
+            <li><Link href="">Abount company</Link></li>
           </ul>
           <ul>
             <li><a href=""><img src="./imagens/face.svg" alt="" /></a></li>
             <li><a href=""><img src="./imagens/instagram.svg" alt="" /></a></li>
             <li><a href=""><img src="./imagens/twitter.svg" alt="" /></a></li>
-           
+
           </ul>
           <button onClick={() => { setShowMenu(true) }}><img src="imagens/line-icon.svg" alt="" /></button>
           {showMenu && (
@@ -32,13 +32,13 @@ const Header = () => {
               <div className={styles.backdrop} onClick={() => { setShowMenu(false) }}></div>
               <div className={styles.line}>
                 <ul>
-                  <li><Link href="">Abount company</Link></li>
-                  <li><Link href="">News</Link></li>
-                  <li><Link href="">Shops</Link></li>
+                  <li><Link href="http://localhost:3000">Home</Link></li>
+                  <li><Link href="http://localhost:3000/products">Products</Link></li>
                   <li><Link href="">Stock</Link></li>
                   <li><Link href="">Services</Link></li>
                   <li><Link href="">Delivery and payment</Link></li>
                   <li><button onClick={() => { setShowSales(true) }}>Sales</button></li>
+                  <li><Link href="">Abount company</Link></li>
                 </ul>
               </div>
             </>
@@ -60,7 +60,7 @@ const Header = () => {
           <div className={styles.catalog}>
             <img src="imagens/grid-icon.svg" alt="" /><em>Products</em>
           </div>
-          <input type="text"/>
+          <input type="text" />
           <button>Search</button>
         </div>
       </section>

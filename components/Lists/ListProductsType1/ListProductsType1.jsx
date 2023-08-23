@@ -40,7 +40,7 @@ const ListProductsType1 = ({ title, data, filterPerCategory, style, showPopulars
         {data.filter((item) => {
           return (
             item.category === filterPerCategory
-            && (showPopulars && item.rating >= 4 || !showPopulars && item)
+            && (showPopulars && item.price <= 1300 || !showPopulars && item)
             && item
           )
         }).map((product, index) => {
