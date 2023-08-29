@@ -1,5 +1,6 @@
 import Header from "@/components/Header/Header";
 import Head from "next/head";
+import Footer from "@/components/Footer/Footer";
 
 const LayoutType1 = ({children, title=''}) => {
   return (
@@ -11,6 +12,7 @@ const LayoutType1 = ({children, title=''}) => {
       <main>
         {children}
       </main>
+      <Footer/>
     </>
   ); 
 }

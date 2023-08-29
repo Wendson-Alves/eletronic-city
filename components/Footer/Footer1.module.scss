@@ -1,0 +1,32 @@
+.footer {
+  margin-top: 100px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  background: rgb(13, 13, 218);
+  color: white;
+
+  .footer_nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    h3 {
+      font-size: 26px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
+
+    li{
+
+    }
+  }
+
+  .footnotes{
+    display: flex;
+    justify-content: space-between;
+  }
+}
