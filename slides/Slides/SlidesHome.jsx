@@ -9,7 +9,6 @@ import Slide from '@/components/Slides/Slides';
 const SlideHome = () => {
   return (
     <>
-      <section className={styles.slide}>
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -24,9 +23,8 @@ const SlideHome = () => {
           modules={[Autoplay, Navigation, Pagination]}
           className="mySwiper"
         >
-          <SwiperSlide>
-            <Slide
-            color={('red')}
+            <SwiperSlide>
+            <Slide 
             image={<img src="./imagens/notebook.png" alt="" />}
             title={'Notebook'}
             text={'Lançamento celular ultima geração, tela de 10", 8G de Ram, memoria 128g'} 
@@ -34,6 +32,7 @@ const SlideHome = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Slide
+            color={styles.color}
             image={<img src="./imagens/notebook.png" alt="" />}
             title={'Celular'} 
             text={'Lançamento celular ultima geração, tela de 10", 8G de Ram, memoria 128g'}
@@ -61,7 +60,6 @@ const SlideHome = () => {
             />
           </SwiperSlide>
         </Swiper>
-      </section>
     </>
   );
 ;}
