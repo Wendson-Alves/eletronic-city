@@ -1,0 +1,23 @@
+.text{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+
+  button{
+display: flex;
+justify-content: space-evenly;
+width: 100%;
+  }
+}
+.p{
+  width: 100%;
+  max-width: 350px;
+
+  p{
+    margin-top: 20px;
+    overflow-wrap: break-word;
+    word-wrap: break-word; 
+    word-break: break-word;
+  }
+}

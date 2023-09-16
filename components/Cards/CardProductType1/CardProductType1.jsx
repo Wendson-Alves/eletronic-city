@@ -13,7 +13,7 @@ const CardProductType1 = ({title, stock, promotion, code, image, discount, price
       {promotion > 0 &&(
         <em className={styles.promotion}>Promotion -{promotion}%</em>
       )}
-      <img src= {image} alt="" />
+      <a href="http://localhost:3000/about_products"><img src= {image} alt="" /></a>
       <em className={styles.product_code}>{code}</em>
       <h3>{title}</h3>
       <Rate  allowHalf disabled defaultValue={rate} style={{color: '#f26522', fontSize: 12, alignSelf:'flex-start', margin: '15px 0' }}/>  
@@ -27,5 +27,4 @@ const CardProductType1 = ({title, stock, promotion, code, image, discount, price
     </div>
   );
 }
- 
 export default CardProductType1;

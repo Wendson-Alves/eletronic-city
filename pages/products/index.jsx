@@ -23,7 +23,7 @@ const ProductPage = () => {
   }, [])
 
   return (
-    <LayoutType1>
+    <LayoutType1 title={'Products'}>
       <section className="container">
         <ListProductsType1
           data={products}

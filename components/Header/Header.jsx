@@ -19,6 +19,7 @@ const Header = () => {
             <li><Link href="http://localhost:3000/deliverypayment">Delivery and payment</Link></li>
             <li><button onClick={() => { setShowSales(true) }}>Sales</button></li>
             <li><Link href="http://localhost:3000/about">Abount company</Link></li>
+            <li><Link href="http://localhost:3000/shops">Shops</Link></li>
           </ul>
           <ul>
             <li><a href=""><img src="./imagens/face.svg" alt="" /></a></li>
@@ -38,7 +39,8 @@ const Header = () => {
                   <li><Link href="">Services</Link></li>
                   <li><Link href="http://localhost:3000/deliverypayment">Delivery and payment</Link></li>
                   <li><button onClick={() => { setShowSales(true) }}>Sales</button></li>
-                  <li><Link href="">Abount company</Link></li>
+                  <li><Link href="http://localhost:3000/about">Abount company</Link></li>
+                  <li><Link href="http://localhost:3000/shops">Shops</Link></li>
                 </ul>
               </div>
             </>

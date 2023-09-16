@@ -6,7 +6,7 @@ const Stocks = () => {
   return (
     <>
       <LayoutType1 title={"Stocks"}>
-        <h1 className="container" style={{ marginTop: 60 }}>
+        <h1 className="container" style={{ marginTop: 50 }}>
           Stocks
         </h1>
         <section className={`${styles.stocks} ${"container"}`}>
