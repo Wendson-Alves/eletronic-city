@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 import { Swiper, SwiperSlide } from 'swiper/react';
 import styles from './ListProductsType1.module.scss'
 import CardProductType1 from '@/components/Cards/CardProductType1/CardProductType1';
@@ -6,14 +5,7 @@ import calcPercent from '@/helpers/calcPercent';
 import { formatCurrencyNumber } from '@/helpers/formatNumber';
 import { Navigation } from 'swiper/modules';
 import formattedURL from '@/helpers/formattedURL';
-=======
-import { Swiper, SwiperSlide } from "swiper/react";
-import styles from "./ListProductsType1.module.scss";
-import CardProductType1 from "@/components/Cards/CardProductType1/CardProductType1";
-import calcPercent from "@/helpers/calcPercent";
-import { formatCurrencyNumber } from "@/helpers/formatNumber";
-import { Navigation } from "swiper/modules";
->>>>>>> Stashed changes
+
 
 const ListProductsType1 = ({
   title,
@@ -28,17 +20,11 @@ const ListProductsType1 = ({
         <h2>{title}</h2>{" "}
         {/* Criar os botoes de navegacao do swiper, com ''navegation'' */}
         <div className={styles.buttons}>
-<<<<<<< Updated upstream
+
           <button id={`prev-${title}`}><img src="/imagens/arrow-left.svg" alt="" /></button>
           <button id={`next-${title}`}><img src="/imagens/arrow-right.svg" alt="" /></button>
-=======
-          <button id={`prev-${title}`}>
-            <img src="./imagens/arrow-left.svg" alt="" />
-          </button>
-          <button id={`next-${title}`}>
-            <img src="./imagens/arrow-right.svg" alt="" />
-          </button>
->>>>>>> Stashed changes
+
+
         </div>
       </div>
       <Swiper
@@ -63,7 +49,7 @@ const ListProductsType1 = ({
         }}
         grabCursor
       >
-<<<<<<< Updated upstream
+
         {data.filter((item) => {
           return (
             item.category === filterPerCategory
@@ -89,35 +75,6 @@ const ListProductsType1 = ({
             </SwiperSlide>
           )
         })}
-=======
-        {data
-          .filter((item) => {
-            return (
-              item.category === filterPerCategory &&
-              ((showPopulars && item.price <= 1300) ||
-                (!showPopulars && item)) &&
-              item
-            );
-          })
-          .map((product, index) => {
-            return (
-              <SwiperSlide className={styles.swiper_slide} key={index}>
-                <CardProductType1
-                  title={product.title}
-                  stock={product.stock}
-                  code={product.id}
-                  rate={product.rating}
-                  //promotion={calcPercent(product.price, product.discount, index >= 0 && index <= 2 ? 1 : 0)}
-                  promotion={calcPercent(product.price, product.discount)}
-                  image={product.image}
-                  discount={formatCurrencyNumber(product.discount, "compact")}
-                  price={formatCurrencyNumber(product.price)}
-                  className={styles.card_product}
-                />
-              </SwiperSlide>
-            );
-          })}
->>>>>>> Stashed changes
       </Swiper>
     </section>
   );
