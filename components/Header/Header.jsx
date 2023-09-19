@@ -78,5 +78,4 @@ export default Header;
 qual evento quero criar (ex: onClick).
 3° faço a verificação da propriedade (ex: showElemento && ( aqui coloco todo o codigo
   que sera verificado se é verdadeiro ou falso))
-
 */}

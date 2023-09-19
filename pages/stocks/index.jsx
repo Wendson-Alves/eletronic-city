@@ -11,8 +11,8 @@ const Stocks = () => {
         </h1>
         <section className={`${styles.stocks} ${"container"}`}>
           <CardStocks
-            image={"./imagens/background-4.png"}
-            text={"Digite o texto"}
+            image={"./imagens/background-5.png"}
+            text={"Digite o texto TypeError: Cannot read properties of undefined (reading 'filter')"}
           />
           <CardStocks
             image={"./imagens/background-4.png"}
@@ -23,7 +23,7 @@ const Stocks = () => {
             text={"Digite o texto"}
           />
           <CardStocks
-            image={"./imagens/background-4.png"}
+            image={"./imagens/background-5.png"}
             text={"Digite o texto"}
           />
           <CardStocks

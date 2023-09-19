@@ -26,7 +26,11 @@ const Shops = () => {
             caprichados e relevantes
           </p>
         </div>
+<<<<<<< Updated upstream
         <img src="/imagens/background-6.png" alt="" />
+=======
+        <img src="./imagens/maps1.png" alt=""  style={{border: " 1px solid black"}}/>
+>>>>>>> Stashed changes
         <div>
           <ul className={styles.locations}>
             <Location
