@@ -6,7 +6,7 @@ const Footer = () => {
       <footer className={styles.footer}>
         <div className={`${styles.footer_nav} container`}>
           <div>
-            <img src="./imagens/city-icon.svg" alt="" />
+            <img src="/imagens/city-icon.svg" alt="" />
             <h2>Eletronic city</h2>
           </div>
           <ul>
@@ -53,17 +53,17 @@ const Footer = () => {
             <ul>
               <li>
                 <a href="">
-                  <img src="./imagens/face.svg" alt="" />
+                  <img src="/imagens/face.svg" alt="" />
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src="./imagens/instagram.svg" alt="" />
+                  <img src="/imagens/instagram.svg" alt="" />
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src="./imagens/twitter.svg" alt="" />
+                  <img src="/imagens/twitter.svg" alt="" />
                 </a>
               </li>
             </ul>

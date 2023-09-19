@@ -1,28 +1,31 @@
 import styles from "@/components/TextDeliveryAndPayment/Text.module.scss";
-import { useState } from 'react';
+import { useState } from "react";
+import { Collapse } from "react-collapse";
 
-const Text = ({text}) => {
-
-  const [showPayment, setShowPayment] = useState(false)
+const Text = ({ text, response }) => {
+  const [showPayment, setShowPayment] = useState(false);
 
   return (
     <>
-    <div  className={styles.text}>
-      <button onClick={() => { setShowPayment (!showPayment)}}>
-       {text}
-      </button>
+      <div className={styles.text}>
+        <button
+          onClick={() => {
+            setShowPayment(!showPayment);
+          }}
+        >
+          {text}
+        </button>
       </div>
-      
-    {showPayment && (
-      <>
+
+      <Collapse isOpened={showPayment}>
         <div className={styles.p}>
           <p>
             fsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddg
           </p>
         </div>
-      </>
-    )}</>
-  )
-}
+      </Collapse>
+    </>
+  );
+};
 
 export default Text;

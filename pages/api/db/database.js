@@ -12,7 +12,7 @@ const dataBase = [
         price: 800,
         discount: 1300,
         stock: 0,
-        image: './imagens/smartphone.png'
+        image: '/imagens/smartphone.png'
       },
       {
         id: 2,
@@ -22,7 +22,7 @@ const dataBase = [
         price: 100,
         discount: 1300,
         stock: 10,
-        image: './imagens/smartphone.png'
+        image: '/imagens/smartphone.png'
       },
       {
         id: 3,
@@ -32,7 +32,7 @@ const dataBase = [
         price: 1000,
         discount: 1300,
         stock: 10,
-        image: './imagens/smartphone.png'
+        image: '/imagens/smartphone.png'
       },
       {
         id: 4,
@@ -42,7 +42,7 @@ const dataBase = [
         price: 2500,
         discount: 4000,
         stock: 10,
-        image: './imagens/smartphone.png'
+        image: '/imagens/smartphone.png'
       },
       {
         id: 5,
@@ -52,7 +52,7 @@ const dataBase = [
         price: 1050,
         discount: 1300,
         stock: 10,
-        image: './imagens/smartphone.png'
+        image: '/imagens/smartphone.png'
       },
       {
         id: 6,
@@ -62,7 +62,7 @@ const dataBase = [
         price: 1080,
         discount: 1300,
         stock: 10,
-        image: './imagens/smartphone.png'
+        image: '/imagens/smartphone.png'
       },
     ]
   },
@@ -77,7 +77,7 @@ const dataBase = [
         price: 2000,
         discount: 1300,
         stock: 10,
-        image: './imagens/notebook.png'
+        image: '/imagens/notebook.png'
       },
       {
         id: 8,
@@ -87,7 +87,7 @@ const dataBase = [
         price: 2000,
         discount: 1300,
         stock: 10,
-        image: './imagens/notebook.png'
+        image: '/imagens/notebook.png'
       },
       {
         id: 9,
@@ -97,7 +97,7 @@ const dataBase = [
         price: 1000,
         discount: 1300,
         stock: 10,
-        image: './imagens/notebook.png'
+        image: '/imagens/notebook.png'
       },
       {
         id: 10,
@@ -107,7 +107,7 @@ const dataBase = [
         price: 1000,
         discount: 1300,
         stock: 10,
-        image: './imagens/notebook.png'
+        image: '/imagens/notebook.png'
       },
       {
         id: 11,
@@ -117,7 +117,7 @@ const dataBase = [
         price: 1700,
         discount: 1300,
         stock: 10,
-        image: './imagens/notebook.png'
+        image: '/imagens/notebook.png'
       },
       {
         id: 12,
@@ -127,7 +127,7 @@ const dataBase = [
         price: 1500,
         discount: 1300,
         stock: 10,
-        image: './imagens/notebook.png'
+        image: '/imagens/notebook.png'
       },
     ]
   },

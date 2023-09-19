@@ -26,7 +26,7 @@ const Shops = () => {
             caprichados e relevantes
           </p>
         </div>
-        <img src="./imagens/background-6.png" alt="" />
+        <img src="/imagens/background-6.png" alt="" />
         <div>
           <ul className={styles.locations}>
             <Location
@@ -35,7 +35,7 @@ const Shops = () => {
               phone={'Seu site é seu cartão de visitas.'}
               email={'Seu site é seu cartão de visitas.'}
               work={'Seu site é seu cartão de visitas.'}
-              img={'./imagens/background-6.png'}
+              img={'/imagens/background-6.png'}
             />
             <Location
               location={'Varzea Alegre - CE'}
@@ -43,7 +43,7 @@ const Shops = () => {
               phone={'Seu site é seu cartão de visitas.'}
               email={'Seu site é seu cartão de visitas.'}
               work={'Seu site é seu cartão de visitas.'}
-              img={'./imagens/background-6.png'}
+              img={'/imagens/background-6.png'}
             />
             <Location
               location={'Varzea Alegre - CE'}
@@ -51,7 +51,7 @@ const Shops = () => {
               phone={'Seu site é seu cartão de visitas.'}
               email={'Seu site é seu cartão de visitas.'}
               work={'Seu site é seu cartão de visitas.'}
-              img={'./imagens/background-6.png'}
+              img={'/imagens/background-6.png'}
             />
             <Location
               location={'Varzea Alegre - CE'}
@@ -59,7 +59,7 @@ const Shops = () => {
               phone={'Seu site é seu cartão de visitas.'}
               email={'Seu site é seu cartão de visitas.'}
               work={'Seu site é seu cartão de visitas.'}
-              img={'./imagens/background-6.png'}
+              img={'/imagens/background-6.png'}
             />
            
           </ul>

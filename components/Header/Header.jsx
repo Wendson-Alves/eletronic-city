@@ -22,9 +22,9 @@ const Header = () => {
             <li><Link href="http://localhost:3000/shops">Shops</Link></li>
           </ul>
           <ul>
-            <li><a href=""><img src="./imagens/face.svg" alt="" /></a></li>
-            <li><a href=""><img src="./imagens/instagram.svg" alt="" /></a></li>
-            <li><a href=""><img src="./imagens/twitter.svg" alt="" /></a></li>
+            <li><a href=""><img src="/imagens/face.svg" alt="" /></a></li>
+            <li><a href=""><img src="/imagens/instagram.svg" alt="" /></a></li>
+            <li><a href=""><img src="/imagens/twitter.svg" alt="" /></a></li>
 
           </ul>
           <button onClick={() => { setShowMenu(true) }}><img src="imagens/line-icon.svg" alt="" /></button>

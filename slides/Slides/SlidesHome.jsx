@@ -25,7 +25,7 @@ const SlideHome = () => {
         >
             <SwiperSlide>
             <Slide 
-            image={<img src="./imagens/notebook.png" alt="" />}
+            image={<img src="/imagens/notebook.png" alt="" />}
             title={'Notebook'}
             text={'Lançamento celular ultima geração, tela de 10", 8G de Ram, memoria 128g'} 
             />
@@ -33,28 +33,28 @@ const SlideHome = () => {
           <SwiperSlide>
             <Slide
             color={styles.color}
-            image={<img src="./imagens/notebook.png" alt="" />}
+            image={<img src="/imagens/notebook.png" alt="" />}
             title={'Celular'} 
             text={'Lançamento celular ultima geração, tela de 10", 8G de Ram, memoria 128g'}
             />
           </SwiperSlide>
           <SwiperSlide>
             <Slide
-            image={<img src="./imagens/notebook.png" alt="" />}
+            image={<img src="/imagens/notebook.png" alt="" />}
             title={'Tv'} 
             text={'Lançamento celular ultima geração, tela de 10", 8G de Ram, memoria 128g'} 
             />
           </SwiperSlide>
           <SwiperSlide>
             <Slide
-            image={<img src="./imagens/notebook.png" alt="" />}
+            image={<img src="/imagens/notebook.png" alt="" />}
             title={'Hits'} 
             text={'Lançamento celular ultima geração, tela de 10", 8G de Ram, memoria 128g'} 
             />
           </SwiperSlide>
           <SwiperSlide>
             <Slide
-            image={<img src="./imagens/notebook.png" alt="" />}
+            image={<img src="/imagens/notebook.png" alt="" />}
             title={'Game'} 
             text={'Lançamento celular ultima geração, tela de 10", 8G de Ram, memoria 128g'} 
             />

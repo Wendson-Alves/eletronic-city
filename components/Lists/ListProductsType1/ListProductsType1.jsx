@@ -4,6 +4,7 @@ import CardProductType1 from '@/components/Cards/CardProductType1/CardProductTyp
 import calcPercent from '@/helpers/calcPercent';
 import { formatCurrencyNumber } from '@/helpers/formatNumber';
 import { Navigation } from 'swiper/modules';
+import formattedURL from '@/helpers/formattedURL';
 
 const ListProductsType1 = ({ title, data, filterPerCategory, style, showPopulars = false }) => {
   return (
@@ -11,8 +12,8 @@ const ListProductsType1 = ({ title, data, filterPerCategory, style, showPopulars
       <div className={styles.group_header}>
         <h2>{title}</h2> {/* Criar os botoes de navegacao do swiper, com ''navegation'' */}
         <div className={styles.buttons}>
-          <button id={`prev-${title}`}><img src="./imagens/arrow-left.svg" alt="" /></button>
-          <button id={`next-${title}`}><img src="./imagens/arrow-right.svg" alt="" /></button>
+          <button id={`prev-${title}`}><img src="/imagens/arrow-left.svg" alt="" /></button>
+          <button id={`next-${title}`}><img src="/imagens/arrow-right.svg" alt="" /></button>
         </div>
       </div>
       <Swiper
@@ -51,6 +52,7 @@ const ListProductsType1 = ({ title, data, filterPerCategory, style, showPopulars
                 stock={product.stock}
                 code={product.id}
                 rate={product.rating}
+                link={`/products/${formattedURL(product.title)}`}
                 //promotion={calcPercent(product.price, product.discount, index >= 0 && index <= 2 ? 1 : 0)}
                 promotion={calcPercent(product.price, product.discount)}
                 image={product.image}

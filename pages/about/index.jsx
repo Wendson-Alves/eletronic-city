@@ -1,4 +1,5 @@
 import LayoutType1 from "@/layouts/LayoutType1";
+import styles from './about.module.scss'
 
 const About = () => {
   return (
