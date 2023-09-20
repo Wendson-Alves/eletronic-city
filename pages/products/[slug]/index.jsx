@@ -1,29 +1,20 @@
 import LayoutType1 from "@/layouts/LayoutType1";
-import axios from "axios";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import styles from "@/pages/products/[slug]/Slug.module.scss";
+import SlugProduct from "@/components/SlugProduct/SlugProduct"
 
 const PageProduct = () => {
-  const router = useRouter()
-  const [dataProduct, setDataProduct] = useState({})
 
-  useEffect(() => {
-    axios.get(`http://localhost:3000/api/products/${router.query.slug}`)
-      .then(res => {
-        setDataProduct(res.data)
-      })
-      .catch(err => console.log(err))
-  }, [router.query.slug])
-  
   return (
     <LayoutType1 title={"Product"}>
-      {JSON.stringify(dataProduct)}
-      <br />
-      {router.pathname}
-      <h1>{dataProduct.title}</h1>
-      <img src={dataProduct.image} alt="Alguma coisa" />
+      <section className={`container ${styles.slug}`}>
+        {JSON.stringify()}
+        {/*{router.pathname}*/}
+        <SlugProduct
+          rate={4}
+        />
+      </section>
     </LayoutType1>
   );
-}
- 
+};
+
 export default PageProduct;

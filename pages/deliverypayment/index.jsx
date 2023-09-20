@@ -14,36 +14,44 @@ const Delivery = () => {
           <Text 
             className="container"
             text='Where does it come from?'
+            response='fsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddg'
           />
           <Text 
             className="container"
             text='Where does it come from?'
-          />
-          <Text 
-            className="container"
-            text='Where does it come from?     '
+            response='fsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddg'
           />
           <Text 
             className="container"
             text='Where does it come from?'
+            response='fsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddg'
+          />
+          <Text 
+            className="container"
+            text='Where does it come from?'
+            response='fsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddg'
           />
           </div>
           <div>
           <Text 
             className="container"
             text='Where does it come from?'
+            response='fsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddg'
           />
           <Text 
             className="container"
             text='Where does it come from?'
+            response='fsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddg'
           />
           <Text 
             className="container"
             text='Where does it come from?'
+            response='fsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddg'
           />
           <Text 
             className="container"
             text='Where does it come from?'
+            response='fsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddg'
           />
         </div>
         </section>
