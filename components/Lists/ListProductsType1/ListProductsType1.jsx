@@ -20,11 +20,8 @@ const ListProductsType1 = ({
         <h2>{title}</h2>{" "}
         {/* Criar os botoes de navegacao do swiper, com ''navegation'' */}
         <div className={styles.buttons}>
-
           <button id={`prev-${title}`}><img src="/imagens/arrow-left.svg" alt="" /></button>
           <button id={`next-${title}`}><img src="/imagens/arrow-right.svg" alt="" /></button>
-
-
         </div>
       </div>
       <Swiper
@@ -67,7 +64,7 @@ const ListProductsType1 = ({
                 link={`/products/${formattedURL(product.title)}`}
                 //promotion={calcPercent(product.price, product.discount, index >= 0 && index <= 2 ? 1 : 0)}
                 promotion={calcPercent(product.price, product.discount)}
-                image={product.image}
+                image={product.image[0]}/*passar o array da image - [0]*/
                 discount={formatCurrencyNumber(product.discount, 'compact')}
                 price={formatCurrencyNumber(product.price)}
                 className={styles.card_product}

@@ -12,7 +12,11 @@ const dataBase = [
         price: 800,
         discount: 1300,
         stock: 0,
-        image: '/imagens/smartphone.png'
+        image: [
+          '/imagens/smartphone1.jpg', 
+          '/imagens/smartphone2.jpg',
+          '/imagens/smartphone.jpg',
+        ]
       },
       {
         id: 2,
@@ -22,7 +26,11 @@ const dataBase = [
         price: 100,
         discount: 1300,
         stock: 10,
-        image: '/imagens/smartphone.png'
+        image: [
+          '/imagens/smartphone1.jpg',
+          '/imagens/smartphone2.jpg',
+          '/imagens/smartphone.jpg',
+        ]
       },
       {
         id: 3,
@@ -32,7 +40,11 @@ const dataBase = [
         price: 1000,
         discount: 1300,
         stock: 10,
-        image: '/imagens/smartphone.png'
+        image: [
+          '/imagens/smartphone1.jpg',
+          '/imagens/smartphone2.jpg',
+          '/imagens/smartphone.jpg',
+        ]
       },
       {
         id: 4,
@@ -42,7 +54,11 @@ const dataBase = [
         price: 2500,
         discount: 4000,
         stock: 10,
-        image: '/imagens/smartphone.png'
+        image: [
+          '/imagens/smartphone1.jpg',
+          '/imagens/smartphone2.jpg',
+          '/imagens/smartphone.jpg',
+        ],
       },
       {
         id: 5,
@@ -52,7 +68,11 @@ const dataBase = [
         price: 1050,
         discount: 1300,
         stock: 10,
-        image: '/imagens/smartphone.png'
+        image: [
+          '/imagens/smartphone1.jpg',
+          '/imagens/smartphone2.jpg',
+          '/imagens/smartphone.jpg',
+        ]
       },
       {
         id: 6,
@@ -62,7 +82,11 @@ const dataBase = [
         price: 1080,
         discount: 1300,
         stock: 10,
-        image: '/imagens/smartphone.png'
+        image: [
+          '/imagens/smartphone1.jpg',
+          '/imagens/smartphone2.jpg',
+          '/imagens/smartphone.jpg',
+        ]
       },
     ]
   },
@@ -77,7 +101,11 @@ const dataBase = [
         price: 2000,
         discount: 1300,
         stock: 10,
-        image: '/imagens/notebook.png'
+          image: [
+            '/imagens/notebook.jpg',
+            '/imagens/notebook1.jpg',
+            '/imagens/notebook2.jpg',
+          ]
       },
       {
         id: 8,
@@ -87,7 +115,11 @@ const dataBase = [
         price: 2000,
         discount: 1300,
         stock: 10,
-        image: '/imagens/notebook.png'
+          image: [
+            '/imagens/notebook.jpg',
+            '/imagens/notebook1.jpg',
+            '/imagens/notebook2.jpg',
+          ]
       },
       {
         id: 9,
@@ -97,7 +129,11 @@ const dataBase = [
         price: 1000,
         discount: 1300,
         stock: 10,
-        image: '/imagens/notebook.png'
+          image: [
+            '/imagens/notebook.jpg',
+            '/imagens/notebook1.jpg',
+            '/imagens/notebook2.jpg',
+          ]
       },
       {
         id: 10,
@@ -107,7 +143,11 @@ const dataBase = [
         price: 1000,
         discount: 1300,
         stock: 10,
-        image: '/imagens/notebook.png'
+          image: [
+            '/imagens/notebook.jpg',
+            '/imagens/notebook1.jpg',
+            '/imagens/notebook2.jpg',
+          ]
       },
       {
         id: 11,
@@ -117,7 +157,11 @@ const dataBase = [
         price: 1700,
         discount: 1300,
         stock: 10,
-        image: '/imagens/notebook.png'
+          image: [
+            '/imagens/notebook.jpg',
+            '/imagens/notebook1.jpg',
+            '/imagens/notebook2.jpg',
+          ]
       },
       {
         id: 12,
@@ -127,7 +171,11 @@ const dataBase = [
         price: 1500,
         discount: 1300,
         stock: 10,
-        image: '/imagens/notebook.png'
+          image: [
+            '/imagens/notebook.jpg',
+            '/imagens/notebook1.jpg',
+            '/imagens/notebook2.jpg',
+          ]
       },
     ]
   },
@@ -142,7 +190,11 @@ const dataBase = [
         price: 1400,
         discount: 1300,
         stock: 10,
-        image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
+        image: [
+        '/imagens/xbox.jpg',
+        '/imagens/xbox1.jpg',
+        '/imagens/xbox2.jpg',
+      ]
       },
       {
         id: 14,
@@ -152,7 +204,11 @@ const dataBase = [
         price: 1100,
         discount: 1300,
         stock: 10,
-        image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
+        image: [
+        '/imagens/xbox.jpg',
+        '/imagens/xbox1.jpg',
+        '/imagens/xbox2.jpg',
+      ]
       },
       {
         id: 15,
@@ -162,7 +218,11 @@ const dataBase = [
         price: 1100,
         discount: 1300,
         stock: 10,
-        image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
+        image: [
+        '/imagens/xbox.jpg',
+        '/imagens/xbox1.jpg',
+        '/imagens/xbox2.jpg',
+      ]
       },
       {
         id: 16,
@@ -172,7 +232,11 @@ const dataBase = [
         price: 1900,
         discount: 900,
         stock: 10,
-        image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
+        image: [
+        '/imagens/xbox.jpg',
+        '/imagens/xbox1.jpg',
+        '/imagens/xbox2.jpg',
+      ]
       },
       {
         id: 17,
@@ -182,7 +246,11 @@ const dataBase = [
         price: 1000,
         discount: 1300,
         stock: 10,
-        image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
+        image: [
+        '/imagens/xbox.jpg',
+        '/imagens/xbox1.jpg',
+        '/imagens/xbox2.jpg',
+      ]
       },
       {
         id: 18,
@@ -192,7 +260,11 @@ const dataBase = [
         price: 1200,
         discount: 1300,
         stock: 10,
-        image: 'https://i.ibb.co/d4RKjrv/aaaaaaa.png'
+        image: [
+        '/imagens/xbox.jpg',
+        '/imagens/xbox1.jpg',
+        '/imagens/xbox2.jpg',
+      ]
       },
     ]
   }

@@ -1,7 +1,8 @@
 import ButtonType1 from "@/components/Buttons/ButtonType1/ButtonType1";
 import styles from "./CardProductType1.module.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Rate } from "antd";
+import React from "react";
 import Link from "next/link";
 import formattedURL from "@/helpers/formattedURL";
 
@@ -17,6 +18,14 @@ const CardProductType1 = ({
   rate,
   className,
 }) => {
+
+  const [countCart, setItems] = useState();
+
+  useEffect(() => {
+    localStorage.setItem( 0 , JSON.stringify (countCart));
+  }, [countCart]);
+
+
   return (
     <div className={`${styles.card_product_type_1} ${className}`}>
       {stock > 0 && <span>In stock</span>}
@@ -44,9 +53,15 @@ const CardProductType1 = ({
           <s>R${discount}</s> <br />
           <h3>R${price}</h3>
         </div>
-        <ButtonType1 title={"Add to car"} />
+        <ButtonType1
+          title="Add to car"
+          onClick={() => {
+           setItems (localStorage.getItem (countCart + 1));
+           }}
+        /> 
       </div>
     </div>
   );
 };
 export default CardProductType1;
+

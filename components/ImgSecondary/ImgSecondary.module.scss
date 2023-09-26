@@ -1,0 +1,16 @@
+.img {
+width: 100px;
+height: 130px;
+
+  img{
+    width: 100%;
+    height: 100%;
+    max-width: 100px;
+    overflow: hidden;
+    object-fit: contain;
+    
+    &:hover{
+      border: 1px solid red;
+    }
+  }
+}
