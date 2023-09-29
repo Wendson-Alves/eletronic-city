@@ -2,11 +2,19 @@
 import { useState, useEffect } from "react";
 import styles from "./Header.module.scss";
 import Link from "next/link";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [showSales, setShowSales] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  const [qntItems, setQntItems] = useState();
+  const state = useSelector (state => state)
 
+  // useEffect(()=>{
+  //   setInterval(()=>{
+  //     setQntItems(localStorage.getItem("countCart"))
+  //   })
+  // },[]);
 
   return (
     <header
@@ -53,11 +61,11 @@ const Header = () => {
           </ul>
           <ul>
             <li>
-            
-                <Link href="http://localhost:3000/carrinho"><img src="/imagens/carrinho.png" alt="" /></Link>
+                <Link href="http://localhost:3000/carrinho"><img src="/imagens/carrinho.png" alt="" />{state.countCart.countCart}</Link>
             </li>
             <li>
               <a href="">
+              {state.dataCart.dataCart}
                 <img src="/imagens/face.svg" alt="" />
               </a>
             </li>
@@ -165,7 +173,7 @@ const Header = () => {
             <img src="imagens/grid-icon.svg" alt="" />
             <em>Products</em>
           </div>
-          <input type="text" />
+          <input type="text"/>
           <button>Search</button>
         </div>
       </section>

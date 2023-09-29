@@ -10,6 +10,11 @@ import ListProductsType1 from "@/components/Lists/ListProductsType1/ListProducts
 
 const ProductPage = () => {
   const [products, setProducts] = useState([])
+  const [items, setItems] = useState([1, 2, 3, 4]);
+
+  // useEffect(() => {
+  //   localStorage.setItem('items', JSON.stringify(items));
+  // }, [items]);
 
   useEffect(() => {
     axios
@@ -25,6 +30,10 @@ const ProductPage = () => {
   return (
     <LayoutType1 title={'Products'}>
       <section className="container">
+    <button onClick={() => {
+      setItems('items', localStorage.getItem(items + 1))
+    }}>aa
+    </button>
         <ListProductsType1
           data={products}
           title={'Smartphone'}

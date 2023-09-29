@@ -5,8 +5,12 @@ import { Rate } from "antd";
 import React from "react";
 import Link from "next/link";
 import formattedURL from "@/helpers/formattedURL";
+import { useDispatch, useSelector } from "react-redux";
+import { setCountCart } from "@/redux/countCart";
+import { setDataCart } from "@/redux/dataCart";
 
 const CardProductType1 = ({
+  onClick,
   title,
   stock,
   link = "/",
@@ -19,12 +23,8 @@ const CardProductType1 = ({
   className,
 }) => {
 
-  const [countCart, setItems] = useState();
-
-  useEffect(() => {
-    localStorage.setItem( 0 , JSON.stringify (countCart));
-  }, [countCart]);
-
+  const dispatch = useDispatch()
+  const state = useSelector (state => state)
 
   return (
     <div className={`${styles.card_product_type_1} ${className}`}>
@@ -53,15 +53,11 @@ const CardProductType1 = ({
           <s>R${discount}</s> <br />
           <h3>R${price}</h3>
         </div>
-        <ButtonType1
-          title="Add to car"
-          onClick={() => {
-           setItems (localStorage.getItem (countCart + 1));
-           }}
-        /> 
+        <ButtonType1 title="Add to cart" onClick={() => {
+          dispatch(setCountCart(state.countCart.countCart + 1))
+        }} />
       </div>
     </div>
   );
 };
 export default CardProductType1;
-

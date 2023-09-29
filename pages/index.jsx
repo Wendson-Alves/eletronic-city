@@ -13,6 +13,7 @@ const home = () => {
         {/* <Link href={'/about'}>
          About
         </Link> */}
+        <div style={{ width:300 }}>
         <CardProductType1
           title={'Xbox 360'}
           stock={15}
@@ -23,6 +24,7 @@ const home = () => {
           discount={formatCurrencyNumber(39700, 'compact')}
           price={formatCurrencyNumber(35900)}
         />
+        </div>
       </section>
     </LayoutType1>
   );
