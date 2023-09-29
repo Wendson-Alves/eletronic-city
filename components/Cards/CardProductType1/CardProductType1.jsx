@@ -22,9 +22,8 @@ const CardProductType1 = ({
   rate,
   className,
 }) => {
-
-  const dispatch = useDispatch()
-  const state = useSelector (state => state)
+  const dispatch = useDispatch();
+  const state = useSelector((state) => state);
 
   return (
     <div className={`${styles.card_product_type_1} ${className}`}>
@@ -53,9 +52,29 @@ const CardProductType1 = ({
           <s>R${discount}</s> <br />
           <h3>R${price}</h3>
         </div>
-        <ButtonType1 title="Add to cart" onClick={() => {
-          dispatch(setCountCart(state.countCart.countCart + 1))
-        }} />
+        <ButtonType1
+          title="Add to cart"
+          onClick={() => {
+            const data = [
+              ...state.dataCart.dataCart,
+              {
+                title: title,
+                image: image,
+                promotion: promotion,
+                stock: stock,
+                code: code,
+                rate: rate,
+                discount: discount,
+                link: link,
+              },
+            ];
+            dispatch(setDataCart(data));
+            localStorage.setItem(
+              "dataCart",
+              JSON.stringify(data)
+            );
+          }}
+        />
       </div>
     </div>
   );

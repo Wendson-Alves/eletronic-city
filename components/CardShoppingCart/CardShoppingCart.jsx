@@ -9,7 +9,7 @@ const CardShoppingCart = ({ minus, more }) => {
   const dispatch = useDispatch()
   const state = useSelector (state => state)
 
-  const countCart = state.countCart.countCart
+  const countCart = 0
 
   return (
     <section className={styles.cart}>

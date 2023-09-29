@@ -2,22 +2,20 @@ import { createSlice } from "@reduxjs/toolkit";
 
 export const dataCart = createSlice({
   name: "dataCart",
-
   initialState: {
     dataCart: [],
-    quantity: 100,
-    image: '/imagens/notebook.jpg',
-    preco: 30000,
-    nome: 'Titulo do produto',
-    
+    //countCart: 0
   },
   reducers: {
     setDataCart(state, action) {
       return { ...state, dataCart: action.payload };
     },
+    // setCountCart(state, action) {
+    //   return { ...state, countCart: action.payload };
+    // },
   },
 });
 
-export const { setDataCart } = dataCart.actions;
+export const { setDataCart /*, setCountCart*/ } = dataCart.actions;
 
 export default dataCart.reducer;

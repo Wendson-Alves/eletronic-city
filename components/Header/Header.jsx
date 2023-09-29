@@ -8,7 +8,7 @@ const Header = () => {
   const [showSales, setShowSales] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const [qntItems, setQntItems] = useState();
-  const state = useSelector (state => state)
+  const state = useSelector((state) => state);
 
   // useEffect(()=>{
   //   setInterval(()=>{
@@ -61,11 +61,13 @@ const Header = () => {
           </ul>
           <ul>
             <li>
-                <Link href="http://localhost:3000/carrinho"><img src="/imagens/carrinho.png" alt="" />{state.countCart.countCart}</Link>
+              <Link href="http://localhost:3000/carrinho">
+                <img src="/imagens/carrinho.png" alt="" />
+                {state.dataCart.dataCart?.length || 0}
+              </Link>
             </li>
             <li>
               <a href="">
-              {state.dataCart.dataCart}
                 <img src="/imagens/face.svg" alt="" />
               </a>
             </li>
@@ -173,7 +175,7 @@ const Header = () => {
             <img src="imagens/grid-icon.svg" alt="" />
             <em>Products</em>
           </div>
-          <input type="text"/>
+          <input type="text" />
           <button>Search</button>
         </div>
       </section>
