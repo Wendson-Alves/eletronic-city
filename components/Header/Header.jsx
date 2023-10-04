@@ -87,7 +87,7 @@ const Header = () => {
               setShowMenu(true);
             }}
           >
-            <img src="imagens/line-icon.svg" alt="" />
+            <img src="/imagens/line-icon.svg" alt="" />
           </button>
           {showMenu && (
             <>
@@ -144,25 +144,25 @@ const Header = () => {
           <ul>
             <li>
               <Link href="">
-                <img src="imagens/city-icon.svg" alt="" />
+                <img src="/imagens/city-icon.svg" alt="" />
                 Eletronic city
               </Link>
             </li>
             <li>
               <Link href="">
-                <img src="imagens/location-icon.svg" alt="" />
+                <img src="/imagens/location-icon.svg" alt="" />
                 Saint-pertersburg
               </Link>
             </li>
             <li>
               <Link href="">
-                <img src="imagens/phone-icon.svg" alt="" />
+                <img src="/imagens/phone-icon.svg" alt="" />
                 4002-8922
               </Link>
             </li>
             <li>
               <Link href="">
-                <img src="imagens/cart-icon.svg" alt="" /> in-basket
+                <img src="/imagens/cart-icon.svg" alt="" /> in-basket
               </Link>
             </li>
           </ul>
@@ -172,7 +172,7 @@ const Header = () => {
       <section>
         <div className={`${styles.search_bar} container`}>
           <div className={styles.catalog}>
-            <img src="imagens/grid-icon.svg" alt="" />
+            <img src="/imagens/grid-icon.svg" alt="" />
             <em>Products</em>
           </div>
           <input type="text" />
