@@ -6,11 +6,9 @@ import React from "react";
 import Link from "next/link";
 import formattedURL from "@/helpers/formattedURL";
 import { useDispatch, useSelector } from "react-redux";
-import { setCountCart } from "@/redux/countCart";
 import { setDataCart } from "@/redux/dataCart";
 
 const CardProductType1 = ({
-  onClick,
   title,
   stock,
   link = "/",

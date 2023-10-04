@@ -1,41 +1,35 @@
-import React, { useState } from "react";
-import styles from "@/components/CardShoppingCart/CardShoppingCart.module.scss";
-import { useSelector, useDispatch } from "react-redux";
-import { setCountCart } from "@/redux/countCart";
+// import React, { useState, useEffect } from "react";
+// import { useSelector, useDispatch } from "react-redux";
+// import CardCart from "../CardCart/CardCart";
+// import calcPercent from "@/helpers/calcPercent";
+// import { formatCurrencyNumber } from "@/helpers/formatNumber";
+// import formattedURL from "@/helpers/formattedURL";
 
+// const CardShoppingCart = ({ data }) => {
+//   const dispatch = useDispatch();
+//   const state = useSelector((state) => state);
+//   // const countCart = state.countCart.countCart
 
-const CardShoppingCart = ({ minus, more }) => {
-  const [add, setAdd] = useState(0);
-  const dispatch = useDispatch()
-  const state = useSelector (state => state)
+//   return (
+//     <>
+//       {data?.map((product, index) => {
+//           return (
+//             <div key={index}>
+//               <CardCart
+//                 minus={"-"}
+//                 more={"+"}
+//                 title={product.title}
+//                 code={product.id}
+//                 //promotion={calcPercent(product.price, product.discount, index >= 0 && index <= 2 ? 1 : 0)}
+//                 image={product.image[0]} /*passar o array da image - [0]*/
+//                 discount={formatCurrencyNumber(product.discount, "compact")}
+//                 price={formatCurrencyNumber(product.price)}
+//               />
+//             </div>
+//           );
+//         })}
+//     </>
+//   );
+// };
 
-  const countCart = 0
-
-  return (
-    <section className={styles.cart}>
-      <ul>
-        <li>
-          <div>
-            <img src={state.dataCart.image} alt="" />
-            <h5>{state.dataCart.nome}</h5>
-          </div>
-          <div>
-            <button onClick={() => {
-          dispatch(setCountCart(countCart > 0 ? countCart - 1 : countCart ))
-        }}>{minus}</button>
-            {/* onClick={() => {
-              setAdd(add > 0 ? add - 1 : add)
-            }} */}
-            <div style={{ width: "40%", justifyContent: "center" }}>{state.dataCart.quantity}</div>
-            <button >{more}</button> 
-            {/* onClick={() => {
-              setAdd(add + 1)}} */}
-          </div>
-          <em>${state.dataCart.preco}</em>
-        </li>
-      </ul>
-    </section>
-  );
-};
-
-export default CardShoppingCart;
+// export default CardShoppingCart;
