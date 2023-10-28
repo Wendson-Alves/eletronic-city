@@ -1,8 +1,27 @@
 import LayoutType1 from "@/layouts/LayoutType1";
 import styles from "@/pages/shops/Shops.module.scss";
-import Location from "@/components/Location/CardLocation"
+import Location from "@/components/Location/CardLocation";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 const Shops = () => {
+  const [location, setLocation] = useState();
+
+  // {JSON.stringify(
+
+  //   )}
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:3000/api/location")
+      .then((res) => {
+        setLocation(res.data);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  }, []);
+
   return (
     <LayoutType1 title={"Shops"}>
       <h1 className="container" style={{ marginTop: 50 }}>
@@ -10,6 +29,7 @@ const Shops = () => {
       </h1>
       <section className={`${styles.container} ${"container"}`}>
         <div>
+          {/* {JSON.stringify(location)} */}
           <p>
             Seu site é seu cartão de visitas. Por isso, os textos precisam ser
             caprichados e relevantes
@@ -26,44 +46,9 @@ const Shops = () => {
             caprichados e relevantes
           </p>
         </div>
-        <img src="./imagens/maps1.png" alt=""  style={{border: " 1px solid black"}}/>
-
-        <div>
-          <ul className={styles.locations}>
-            <Location
-              location={'Varzea Alegre - CE'}
-              address={'Seu site é seu cartão de visitas.'}
-              phone={'Seu site é seu cartão de visitas.'}
-              email={'Seu site é seu cartão de visitas.'}
-              work={'Seu site é seu cartão de visitas.'}
-              img={'/imagens/background-6.png'}
-            />
-            <Location
-              location={'Varzea Alegre - CE'}
-              address={'Seu site é seu cartão de visitas.'}
-              phone={'Seu site é seu cartão de visitas.'}
-              email={'Seu site é seu cartão de visitas.'}
-              work={'Seu site é seu cartão de visitas.'}
-              img={'/imagens/background-6.png'}
-            />
-            <Location
-              location={'Varzea Alegre - CE'}
-              address={'Seu site é seu cartão de visitas.'}
-              phone={'Seu site é seu cartão de visitas.'}
-              email={'Seu site é seu cartão de visitas.'}
-              work={'Seu site é seu cartão de visitas.'}
-              img={'/imagens/background-6.png'}
-            />
-            <Location
-              location={'Varzea Alegre - CE'}
-              address={'Seu site é seu cartão de visitas.'}
-              phone={'Seu site é seu cartão de visitas.'}
-              email={'Seu site é seu cartão de visitas.'}
-              work={'Seu site é seu cartão de visitas.'}
-              img={'/imagens/background-6.png'}
-            />
-           
-          </ul>
+        <img src="./imagens/maps1.png" alt="" style={{ border: " 1px solid black", width: '100%'}}/>
+        <div className={styles.locations}>
+          <Location data={location} />
         </div>
       </section>
     </LayoutType1>

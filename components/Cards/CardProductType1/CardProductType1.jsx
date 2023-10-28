@@ -56,6 +56,7 @@ const CardProductType1 = ({
             const data = [
               ...state.dataCart.dataCart,
               {
+                price: price,
                 title: title,
                 image: image,
                 promotion: promotion,

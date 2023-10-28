@@ -33,3 +33,29 @@
 // };
 
 // export default CardShoppingCart;
+
+import React from 'react'
+import Founders from '../Founders/Founders'
+import styles from '@/components/CardShoppingCart/CardShoppingCart.module.scss'
+
+const CardShoppingCart = ({ data }) => {
+  return (
+    <>
+       {data?.map((people, index) => {
+      return(
+        <div  key={index}>
+        <Founders
+          age={people.age}
+          image={people.image}
+          title={people.name}
+          profession={people.profession}
+        />
+        </div>
+      )
+    })
+    }
+    </>
+  )
+}
+
+export default CardShoppingCart

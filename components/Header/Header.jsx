@@ -3,18 +3,44 @@ import { useState, useEffect } from "react";
 import styles from "./Header.module.scss";
 import Link from "next/link";
 import { useSelector } from "react-redux";
+import ButtonType1 from "../Buttons/ButtonType1/ButtonType1";
+import axios from "axios";
+import { result } from "lodash";
+import SearchResults from "../SearchResults/SearchResults";
 
 const Header = () => {
   const [showSales, setShowSales] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
-  const [qntItems, setQntItems] = useState();
+  const [showUser, setShowUser] = useState(false);
+  const [products, setProducts] = useState([]);
   const state = useSelector((state) => state);
-
+  
   // useEffect(()=>{
   //   setInterval(()=>{
   //     setQntItems(localStorage.getItem("countCart"))
   //   })
   // },[]);
+  // const inputChange = (e) =>{
+  //    e.preventDefault()
+  // useEffect(() => {
+  //   axios
+  //     .get('http://localhost:3000/api/products')
+  //     .then(res => {
+  //       setProducts(res.data)
+  //     })
+  //     }, [])
+  // // }
+  // const inputChange = (e) => {
+  //   e.preventDefault();
+  //   const {value} = e.target;
+    
+  //   if (!value) return;
+  //   const url = `http://localhost:3000/api/products${value}`;
+    
+  //   fetch(url)
+  //   .then((res) => res.json())
+  //   .then(({products}) => setProducts(products))
+  // }
 
   return (
     <header
@@ -36,7 +62,7 @@ const Header = () => {
               <Link href="http://localhost:3000/stocks">Stock</Link>
             </li>
             <li>
-              <Link href="">Services</Link>
+              <Link href="http://localhost:3000/founders">Founders</Link>
             </li>
             <li>
               <Link href="http://localhost:3000/deliverypayment">
@@ -61,7 +87,7 @@ const Header = () => {
           </ul>
           <ul>
             <li>
-              <Link href="http://localhost:3000/carrinho">
+              <Link href="http://localhost:3000/cart">
                 <img src="/imagens/carrinho.png" alt="" />
                 {state.dataCart.dataCart?.length || 0}
               </Link>
@@ -80,6 +106,13 @@ const Header = () => {
               <a href="">
                 <img src="/imagens/twitter.svg" alt="" />
               </a>
+            </li>
+            <li>
+              <button  onClick={() => {
+              setShowUser(true);
+            }}>
+                <img src="/imagens/usuario.png" alt="" />
+              </button>
             </li>
           </ul>
           <button
@@ -169,6 +202,22 @@ const Header = () => {
         </div>
       )}{" "}
       {/** os dois && serve para verificação de flase e true */}
+      {showUser && (
+        <div className={`${styles.user} container`}>
+        <div>
+          <button  onClick={() => { setShowUser(false)}}>x</button>
+        </div>
+        <span>Entrar</span>
+        <p>Email</p>
+        <input placeholder="Seu Email" type="text" />
+        <p>Senha</p>
+        <input placeholder='Sua Senha' type="text" />
+        <ButtonType1
+          className={styles.button}
+          title={'Logar'}
+        />
+        </div>
+      )}
       <section>
         <div className={`${styles.search_bar} container`}>
           <div className={styles.catalog}>

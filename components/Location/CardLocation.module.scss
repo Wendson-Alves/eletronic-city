@@ -1,0 +1,29 @@
+.location {
+    width: 100%;
+     display: flex;
+     flex-direction: column;
+
+     span{
+       color: orangered;
+       font-size: 20px;
+       font-weight: 600;
+     }
+
+    li{
+     list-style: none;
+     margin-right: 15px;
+     margin-bottom: 8px;
+     display: flex;
+     align-items: start;
+
+     h4{
+       font-size: 17px;
+       font-weight: 700;
+       margin-right: 10px;
+       margin-top: 3px;
+     }
+     img{
+      width: 80%;
+    }
+    }
+ }

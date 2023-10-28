@@ -8,35 +8,11 @@ margin-top: 30px;
     list-style-position: inside;
     list-style-type: disc;
    }
+   
   }
-
-  img{
+  .locations {
     width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
   }
-  .locations{
-     width: 100%;
-      display: grid;
-      grid-template-columns: auto auto auto;
-
-      span{
-        color: orangered;
-        font-size: 20px;
-        font-weight: 600;
-      }
-
-     li{
-      list-style: none;
-      margin-right: 15px;
-      margin-bottom: 8px;
-      display: flex;
-      align-items: start;
-
-      h4{
-        font-size: 17px;
-        font-weight: 700;
-        margin-right: 10px;
-        margin-top: 3px;
-      }
-     }
-  } 
 }

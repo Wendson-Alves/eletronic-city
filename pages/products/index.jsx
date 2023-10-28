@@ -44,7 +44,6 @@ const ProductPage = () => {
           title={'Hits'}
           filterPerCategory={'hits'}
           style={{marginTop: 20}}
-          showPopulars
         />
       </section>
     </LayoutType1>

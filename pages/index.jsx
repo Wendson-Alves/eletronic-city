@@ -1,33 +1,41 @@
-import CardProductType1 from "@/components/Cards/CardProductType1/CardProductType1";
-import { formatCurrencyNumber } from "@/helpers/formatNumber";
+import 'swiper/css'
 import LayoutType1 from "@/layouts/LayoutType1";
-import Link from "next/link";
-import SlideHome from "@/slides/Slides/SlidesHome";
-import styles from "@/pages/home.module.scss"
+import { useEffect, useState } from "react";
+import axios from "axios";
+import calcPercent from "@/helpers/calcPercent";
+import ListProductsType2 from "@/components/Lists/ListProductsType2/ListProductsType2";
+import SlideHome from '@/slides/Slides/SlidesHome';
 
-const home = () => {
+const ProductPage = () => {
+  const [products, setProducts] = useState([])
+
+  // useEffect(() => {
+  //   localStorage.setItem('items', JSON.stringify(items));
+  // }, [items]);
+
+  useEffect(() => {
+    axios
+      .get('http://localhost:3000/api/products')
+      .then(res => {
+        setProducts(res.data)
+      })
+      .catch(err => {
+        console.error(err)
+      })
+  }, [])
+
   return (
-    <LayoutType1 title={"Home"}>
+    <LayoutType1 title={'Products'}>
       <section className="container">
-      <SlideHome className={styles.color}/>
-        {/* <Link href={'/about'}>
-         About
-        </Link> */}
-        <div style={{ width:300 }}>
-        <CardProductType1
-          title={'Xbox 360'}
-          stock={15}
-          code={'PC18653'}
-          rate={4}
-          promotion={25}
-          image={'https://i.ibb.co/d4RKjrv/aaaaaaa.png'}
-          discount={formatCurrencyNumber(39700, 'compact')}
-          price={formatCurrencyNumber(35900)}
+      <SlideHome/>
+        <ListProductsType2
+          data={products.filter((e) => e.price <= 1250)}
+          title={'Menores Preços'}
+          style={{marginTop: 20}}
         />
-        </div>
       </section>
     </LayoutType1>
   );
 }
-
-export default home;
+ 
+export default ProductPage;

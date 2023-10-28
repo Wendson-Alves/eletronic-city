@@ -5,6 +5,6 @@ import countCart from "./countCart";
 export default configureStore ({
   reducer: {
     dataCart: dataCart,
-    //countCart: countCart,
+   // countCart: countCart,
   }
 })

@@ -1,3 +1,7 @@
 .color{
-  background: rgb(156, 154, 156);
+  background-image: url("/imagens/fundo-gradiente.avif") ;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }

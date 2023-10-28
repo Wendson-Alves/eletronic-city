@@ -11,7 +11,10 @@ const refatoringArray = (data) => {
           price: product.price,
           discount: product.discount,
           stock: product.stock,
-          image: product.image
+          image: product.image,
+          name: product.name,
+          profession: product.profession,
+          age: product.age
         }
       })
     )

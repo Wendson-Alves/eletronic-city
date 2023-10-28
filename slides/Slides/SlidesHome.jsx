@@ -13,7 +13,7 @@ const SlideHome = () => {
           spaceBetween={30}
           centeredSlides={true}
           autoplay={{
-            delay: 3000,
+            delay: 4000,
             disableOnInteraction: true,
           }}
           pagination={{
@@ -25,9 +25,10 @@ const SlideHome = () => {
         >
             <SwiperSlide>
             <Slide 
+            color={styles.color}
             image={<img src="/imagens/notebook.png" alt="" />}
-            title={'Notebook'}
-            text={'Lançamento celular ultima geração, tela de 10", 8G de Ram, memoria 128g'} 
+            title={'Super oferta da Eletronic City'}
+            text={'Frete Gratis'} 
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -40,9 +41,10 @@ const SlideHome = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Slide
-            image={<img src="/imagens/notebook.png" alt="" />}
-            title={'Tv'} 
-            text={'Lançamento celular ultima geração, tela de 10", 8G de Ram, memoria 128g'} 
+            color={styles.color}
+            image={<img src="/imagens/tv.png" alt="" />}
+            title={'Smart TV Samsung'} 
+            text={'R$999 nova smart tv samsung'} 
             />
           </SwiperSlide>
           <SwiperSlide>

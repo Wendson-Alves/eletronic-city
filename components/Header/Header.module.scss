@@ -143,6 +143,46 @@
       }
     }
   }
+  .user {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background:rgb(13, 13, 218);
+    width: 250px;
+    height: 350px;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    z-index: 1025;
+    border-radius: 10px;
+
+    div, button {
+      color: white;
+      align-self: flex-end;
+      font-size: 20px;
+      margin: 0;
+    }
+
+    button{
+      align-self: center;
+      font-size: 18px;
+    }
+
+    input{
+      margin-bottom: 20px;
+    }
+
+    span{
+      align-self: center;
+      color: white;
+
+    }
+
+    p{
+      color: white;
+    }
+  }
 
   section {
     background:rgb(13, 13, 218);

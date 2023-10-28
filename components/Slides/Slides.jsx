@@ -5,8 +5,8 @@ const Slide = ({ image, title, text, color }) => {
     <section className={`${styles.slide} ${color}`}>
       <div>
         <div className={styles.description}>
-          <h3>{title}</h3>
-          <p>{text}</p>
+          <h2>{title}</h2>
+          <h3>{text}</h3>
         </div>
         {image}
       </div>
