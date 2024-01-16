@@ -32,22 +32,22 @@ const Shops = () => {
           {/* {JSON.stringify(location)} */}
           <p>
             Seu site é seu cartão de visitas. Por isso, os textos precisam ser
-            caprichados e relevantes
+            caprichados e relevantes.
+            
           </p>
           <ul>
             <h4>Eletronic city</h4>
-            <li>Seu site é seu cartão de visitas.</li>
-            <li>Seu site é seu cartão de visitas.</li>
-            <li>Seu site é seu cartão de visitas.</li>
-            <li>Seu site é seu cartão de visitas.</li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
           </ul>
           <p>
             Seu site é seu cartão de visitas. Por isso, os textos precisam ser
-            caprichados e relevantes
+            caprichados e relevantes.
           </p>
         </div>
-        <img src="./imagens/maps1.png" alt="" style={{ border: " 1px solid black", width: '100%'}}/>
-        <div className={styles.locations}>
+        <div data-aos="fade-up" className={styles.locations}>
           <Location data={location} />
         </div>
       </section>

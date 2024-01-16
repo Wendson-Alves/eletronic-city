@@ -3,6 +3,7 @@ import axios from "axios";
 import  { useState, useEffect } from 'react'
 import CardShoppingCart from "@/components/CardShoppingCart/CardShoppingCart";
 import LayoutType1 from "@/layouts/LayoutType1";
+import Founders from "@/components/Founders/Founders";
 
 const PageFounders = () => {
   const [products, setProducts] = useState([])
@@ -22,7 +23,7 @@ const PageFounders = () => {
     <LayoutType1>
     <section className= {`container ${styles.container}`}>
     {/* {JSON.stringify(products)} */}
-   <CardShoppingCart
+   <Founders
     data={products}
    />
     </section>

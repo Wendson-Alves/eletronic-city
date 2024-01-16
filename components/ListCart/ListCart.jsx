@@ -45,9 +45,11 @@ const ListCart = ({ data }) => {
 
   const initialValue = [];
   const arrayValores  = state.dataCart.dataCart
-  .map((product) => product.price)
+  .map((product) => product.price);
   
-  const total = arrayValores.reduce((accumulator, Value,) => accumulator + Value, initialValue);
+  const total = arrayValores.reduce(function (soma, i) {
+    return soma + i;
+  });
 
   
   
@@ -65,6 +67,7 @@ const ListCart = ({ data }) => {
   }
   return (
     <div className={styles.cart}>
+    {JSON.stringify(total)}
       <ul>
         {_.uniqBy(data, "title")
           .sort((a, b) => {

@@ -12,7 +12,7 @@ const Stocks = () => {
         <section className={`${styles.stocks} ${"container"}`}>
           <CardStocks
             image={"./imagens/background-5.png"}
-            text={"Digite o texto TypeError: Cannot read properties of undefined (reading 'filter')"}
+            text={"Digite o texto"}
           />
           <CardStocks
             image={"./imagens/background-4.png"}

@@ -1,13 +1,13 @@
-import 'swiper/css'
+import "swiper/css";
 import LayoutType1 from "@/layouts/LayoutType1";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import calcPercent from "@/helpers/calcPercent";
 import ListProductsType2 from "@/components/Lists/ListProductsType2/ListProductsType2";
-import SlideHome from '@/slides/Slides/SlidesHome';
+import SlideHome from "@/slides/Slides/SlidesHome";
 
 const ProductPage = () => {
-  const [products, setProducts] = useState([])
+  const [products, setProducts] = useState([]);
 
   // useEffect(() => {
   //   localStorage.setItem('items', JSON.stringify(items));
@@ -15,27 +15,27 @@ const ProductPage = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3000/api/products')
-      .then(res => {
-        setProducts(res.data)
+      .get("http://localhost:3000/api/products")
+      .then((res) => {
+        setProducts(res.data);
       })
-      .catch(err => {
-        console.error(err)
-      })
-  }, [])
+      .catch((err) => {
+        console.error(err);
+      });
+  }, []);
 
   return (
-    <LayoutType1 title={'Products'}>
+    <LayoutType1 title={"Products"}>
       <section className="container">
-      <SlideHome/>
+        <SlideHome />
         <ListProductsType2
           data={products.filter((e) => e.price <= 1250)}
-          title={'Menores Preços'}
-          style={{marginTop: 20}}
+          title={"Menores Preços"}
+          style={{ marginTop: 20 }}
         />
       </section>
     </LayoutType1>
   );
-}
- 
+};
+
 export default ProductPage;

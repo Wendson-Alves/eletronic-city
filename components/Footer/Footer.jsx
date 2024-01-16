@@ -14,30 +14,13 @@ const Footer = () => {
               <h3>Titulo</h3>
             </li>
             <li>
-              <a href="">Texto nav</a>
+              <a href="">Lorem ipsum</a>
             </li>
             <li>
-              <a href="">Texto nav</a>
+              <a href="">Lorem ipsum</a>
             </li>
             <li>
-              <a href="">Texto nav</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <h3>Titulo</h3>
-            </li>
-            <li>
-              <a href="">Texto nav</a>
-            </li>
-            <li>
-              <a href="">Texto nav</a>
-            </li>
-            <li>
-              <a href="">Texto nav</a>
-            </li>
-            <li>
-              <a href="">Texto nav</a>
+              <a href="">Lorem ipsum</a>
             </li>
           </ul>
           <ul>
@@ -45,7 +28,24 @@ const Footer = () => {
               <h3>Titulo</h3>
             </li>
             <li>
-              <a href="">Texto nav</a>
+              <a href="">Lorem ipsum</a>
+            </li>
+            <li>
+              <a href="">Lorem ipsum</a>
+            </li>
+            <li>
+              <a href="">Lorem ipsum</a>
+            </li>
+            <li>
+              <a href="">Lorem ipsum</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Titulo</h3>
+            </li>
+            <li>
+              <a href="">Lorem ipsum</a>
             </li>
           </ul>
           <div>
@@ -70,7 +70,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={`${styles.footnotes} container`}>
-          @ 2001-2022 asdfsgfdgf <p>asdfsdfasf</p>
+          @ 2001-2022 Lorem ipsum <p>Lorem ipsum</p>
         </div>
       </footer>
     </>

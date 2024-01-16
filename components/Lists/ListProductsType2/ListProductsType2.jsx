@@ -13,7 +13,6 @@ const ListProductsType1 = ({
   data,
   filterPerCategory,
   style,
-  showPopulars = false,
 }) => {
   return (
     <section style={style}>

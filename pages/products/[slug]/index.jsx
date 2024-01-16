@@ -31,12 +31,10 @@ const PageProduct = () => {
     <LayoutType1 title={"Product"}>
       {dataProduct !== undefined && (
         <section className={`container ${styles.slug}`}>
-          {JSON.stringify()}
           {/*{router.pathname}*/}
           <>
-            <h1>{dataProduct.title}</h1>
             <div className={styles.imagens}>
-              <div style={{ marginRight: "50px" }}>
+              <div className={styles.imagens_secundarias}>
                 <ImgSecondary
                   onClick={() => {
                     setImg(dataProduct.image?.[0]);
@@ -57,9 +55,9 @@ const PageProduct = () => {
                 />
               </div>
               <img src={img} alt="" />
-              <div className="container">
+              <div className={styles.about}>
                 <h4>about products</h4>
-                <div className={styles.about}>
+                <div >
                   <ul>
                     <li>resolvemos listar vantagens</li>
                     <li>resolvemos listar vantagens</li>

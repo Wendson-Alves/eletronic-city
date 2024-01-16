@@ -13,45 +13,45 @@ const Delivery = () => {
         <div>
           <Text 
             className="container"
-            text='Where does it come from?'
-            response='fsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddg'
+            text='Lorem ipsum dolor sit amet consectetur adipisicing elit'
+            response='Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sunt. Dolor optio aliquam atque! Numquam accusantium commodi velit nisi, quisquam similique blanditiis reprehenderit!'
           />
           <Text 
             className="container"
-            text='Where does it come from?'
-            response='fsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddg'
+            text='Lorem ipsum dolor sit amet consectetur adipisicing elit'
+            response='Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sunt. Dolor optio aliquam atque! Numquam accusantium commodi velit nisi, quisquam similique blanditiis reprehenderit!'
           />
           <Text 
             className="container"
-            text='Where does it come from?'
-            response='fsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddg'
+            text='Lorem ipsum dolor sit amet consectetur adipisicing elit'
+            response='Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sunt. Dolor optio aliquam atque! Numquam accusantium commodi velit nisi, quisquam similique blanditiis reprehenderit!'
           />
           <Text 
             className="container"
-            text='Where does it come from?'
-            response='fsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddg'
+            text='Lorem ipsum dolor sit amet consectetur adipisicing elit'
+            response='Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sunt. Dolor optio aliquam atque! Numquam accusantium commodi velit nisi, quisquam similique blanditiis reprehenderit!'
           />
           </div>
           <div>
           <Text 
             className="container"
-            text='Where does it come from?'
-            response='fsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddg'
+            text='Lorem ipsum dolor sit amet consectetur adipisicing elit'
+            response='Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sunt. Dolor optio aliquam atque! Numquam accusantium commodi velit nisi, quisquam similique blanditiis reprehenderit!'
           />
           <Text 
             className="container"
-            text='Where does it come from?'
-            response='fsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddg'
+            text='Lorem ipsum dolor sit amet consectetur adipisicing elit'
+            response='Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sunt. Dolor optio aliquam atque! Numquam accusantium commodi velit nisi, quisquam similique blanditiis reprehenderit!'
           />
           <Text 
             className="container"
-            text='Where does it come from?'
-            response='fsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddg'
+            text='Lorem ipsum dolor sit amet consectetur adipisicing elit'
+            response='Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sunt. Dolor optio aliquam atque! Numquam accusantium commodi velit nisi, quisquam similique blanditiis reprehenderit!'
           />
           <Text 
             className="container"
-            text='Where does it come from?'
-            response='fsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddgfsdgfdddddddddddddg'
+            text='Lorem ipsum dolor sit amet consectetur adipisicing elit'
+            response='Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sunt. Dolor optio aliquam atque! Numquam accusantium commodi velit nisi, quisquam similique blanditiis reprehenderit!'
           />
         </div>
         </section>

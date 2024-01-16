@@ -11,10 +11,9 @@ import SearchResults from "../SearchResults/SearchResults";
 const Header = () => {
   const [showSales, setShowSales] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
-  const [showUser, setShowUser] = useState(false);
   const [products, setProducts] = useState([]);
   const state = useSelector((state) => state);
-  
+
   // useEffect(()=>{
   //   setInterval(()=>{
   //     setQntItems(localStorage.getItem("countCart"))
@@ -33,10 +32,10 @@ const Header = () => {
   // const inputChange = (e) => {
   //   e.preventDefault();
   //   const {value} = e.target;
-    
+
   //   if (!value) return;
   //   const url = `http://localhost:3000/api/products${value}`;
-    
+
   //   fetch(url)
   //   .then((res) => res.json())
   //   .then(({products}) => setProducts(products))
@@ -107,14 +106,11 @@ const Header = () => {
                 <img src="/imagens/twitter.svg" alt="" />
               </a>
             </li>
-            <li>
-              <button  onClick={() => {
-              setShowUser(true);
-            }}>
-                <img src="/imagens/usuario.png" alt="" />
-              </button>
-            </li>
           </ul>
+          <div>
+            <img src="/imagens/city-icon.svg" alt="" />
+            <span>Eletronic city</span>
+          </div>
           <button
             onClick={() => {
               setShowMenu(true);
@@ -122,6 +118,7 @@ const Header = () => {
           >
             <img src="/imagens/line-icon.svg" alt="" />
           </button>
+          
           {showMenu && (
             <>
               <div
@@ -202,22 +199,6 @@ const Header = () => {
         </div>
       )}{" "}
       {/** os dois && serve para verificação de flase e true */}
-      {showUser && (
-        <div className={`${styles.user} container`}>
-        <div>
-          <button  onClick={() => { setShowUser(false)}}>x</button>
-        </div>
-        <span>Entrar</span>
-        <p>Email</p>
-        <input placeholder="Seu Email" type="text" />
-        <p>Senha</p>
-        <input placeholder='Sua Senha' type="text" />
-        <ButtonType1
-          className={styles.button}
-          title={'Logar'}
-        />
-        </div>
-      )}
       <section>
         <div className={`${styles.search_bar} container`}>
           <div className={styles.catalog}>

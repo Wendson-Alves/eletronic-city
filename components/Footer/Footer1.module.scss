@@ -14,8 +14,17 @@
     padding: 40px 0;
     border-bottom: 1px solid white;
 
+    @media (max-width: 756px) {
+      flex-direction: column;
+    }
+
     div:nth-child(1) {
       display: flex;
+      justify-content: center;
+
+      @media (max-width: 756px) {
+        margin-bottom: 25px;
+      }
 
       img {
         width: 35px;
@@ -28,7 +37,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-
+      
+      @media (max-width: 756px) {
+        margin-top: 25px;
+      }
+      
       ul {
         display: flex;
         flex-direction: row;
@@ -48,6 +61,10 @@
     ul {
       display: flex;
       flex-direction: column;
+
+      @media (max-width: 756px) {
+        margin-top: 25px;
+      }
 
       li {
         margin: 5px 0;

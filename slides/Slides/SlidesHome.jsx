@@ -42,7 +42,7 @@ const SlideHome = () => {
           <SwiperSlide>
             <Slide
             color={styles.color}
-            image={<img src="/imagens/tv.png" alt="" />}
+            image={<img src="/imagens/notebook.png" alt="" />}
             title={'Smart TV Samsung'} 
             text={'R$999 nova smart tv samsung'} 
             />
